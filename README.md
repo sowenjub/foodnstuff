@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+`EDITOR="atom --wait" rails credentials:edit`
