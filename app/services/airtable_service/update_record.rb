@@ -20,7 +20,7 @@ class AirtableService::UpdateRecord
   private
 
   def update_found
-    @record['Image'] = food_facts['image_url']
+    @record['Image'] = [{ url: food_facts['image_url'] }] if food_facts['image_url'].present?
     @record['Name'] = food_facts['product_name']
     @record['Brand'] = food_facts['brands']
   end
